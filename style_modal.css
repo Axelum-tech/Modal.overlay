@@ -1,0 +1,121 @@
+
+body{
+    background-color: #333;
+    font-family:Arial, Helvetica, sans-serif ;
+   
+}
+main{
+    width:90%;
+    margin: 20% auto;
+    color: rgb(155, 153, 153);
+}
+
+main p{
+    text-align: justify;
+}
+main .add{
+    font-size: 150%;
+    width: 400px;
+    margin: 5% auto;
+    text-align: center;
+}
+
+main .add a{
+    background-color: orange;
+    padding: 1%;
+    text-decoration: none;
+    
+}
+
+#modal{
+    background-color: #678;
+    display: none;
+    position: fixed;
+    top: 30%;
+    left:30%;   
+    z-index: 1;  
+    padding:0% 5% 5% 5% ; 
+}
+#modal:target{
+    display: block;
+    width: 50%;
+    height: 50%;
+    position: fixed;
+    top: 20%;
+    left:20%
+}
+#modal input{
+    padding:2%;
+    width: 60%;
+    margin:1%;
+         
+}
+#modal form {
+    display: absolute;
+    
+}
+#modal button{
+    padding: 3%;
+    width:86.55%;
+    margin-left:10%;
+}
+.close>a{
+    position:absolute;
+    top: 3%;
+    left: 93%;
+    text-decoration: none;
+    color: white;
+}
+.curtain{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    ;
+}
+
+#modal:target+.overlay{
+    position: fixed;
+    width: 100%;
+    height:100%;
+    top: 0;
+    left:0; 
+    background-color:rgba(0, 0, 0, 0.541);
+}
+   
+
+main #modal>h1,h2{
+text-align: center;    
+}
+
+main>#modal>form>select{
+    padding:1.95%;
+    width: 13%;
+    margin:1% auto
+   }
+   #modal form input{
+       display: inline-block;
+       position: relative;
+       left: 20%;
+   }
+   #modal form .phone_form{
+    display: inline-block;
+    position: relative;
+    left: -1.5%;
+}
+#modal form #email{
+    display: inline-block;
+    position: relative;
+    left: 16%;
+}
+#modal form #fname{
+    display: inline-block;
+    position: relative;
+    left: 11%;
+}
+
+
+
+
+
+
+

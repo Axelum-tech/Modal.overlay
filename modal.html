@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style_modal.css">
+</head>
+<body>
+    <!-- HW1: Main- why? Deoarece:
+    1. specifica continutul principal al paginii
+    2. unic intr-o pagina
+    3. in interiorul <main> nu utilizam alte tag-uri care se vor mai repeta
+    4. nu este si nici nu trebuie sa fie mostenitor al elementelor structurale individuale
+    5. arata/conduce browserul directia unde se va gasi informatia cautata de utilizator 
+
+am o intrebare- daca totusi in main nu se introduc tag-uri structurale care se vor repeta in afara main-ului, mai este necesar sa ii dam id, sau putem sa stilizam direct fara id/clasa?-->
+    <main>
+        <h1>Lorem ipsum dolor sit amet.</h1>
+
+    <!-- HW2: is it correct to use another h1?:
+    1.Conform celo de la google, se pot utiliza cite h1 este nevoie
+    2.Conform celor de la W3C nu este recomndata utilizarea mai multor h1 intr-o pagina.
+
+    Din cele citite am inteles ca stucturarea textului este importanta, atit pentru browser cit si pentru utilizator.
+    Utilizarea mai multor h1 "mimeaza" in unele cazuri importanta informatiei (in cazurile site-urilor "agresive").
+    Totusi in unele cazuri poate fi necesara utilizare mai multor h1 si aici ma refer mai ales la site-urile cu o singura pagina
+    care tot ruleaza in jos. 
+    
+    Chiar daca cei de la google afirma ca browser-ele identifica identifica importanata paginii in functie de headinguri si
+    titlu, multi SEO-experti spun ca nu influenteaza atit de tare atunci cind folosesti un singur heading sau mai multe.
+    
+    Concluzie: In cazul respectiv nu cred ca este necesar a se folosi h1 in loc de h2. Informatia din h2 este mai voluminoasa.
+    Motorul de cautare poate oferi utilizatorului mai multe cuvinte cheie, ducind astfel utilizatorul in eroare. Pe linga afirmatiile
+    google sau W3C, cred ca si structura trebuie sa fie inteleasa si de programatorii care  vor modifica codul -->
+
+
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, dicta.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptate nulla nemo laboriosam quos eveniet, laudantium dignissimos sequi cum dolorem doloremque repudiandae dolorum alias eligendi autem ipsa reprehenderit, accusantium doloribus ab non labore aperiam voluptas. Incidunt sunt, commodi quibusdam autem alias labore dignissimos, ea sit assumenda fuga repellendus accusamus laboriosam!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur sequi soluta ipsum inventore ab dolor cum dignissimos! Enim eveniet exercitationem impedit. Ducimus, explicabo est dolorum aperiam ea odio vel ipsum reiciendis rem totam minus magni impedit laborum ratione aspernatur. Possimus optio quasi pariatur nisi, doloremque nemo, quam recusandae nobis, magnam mollitia odio explicabo eum modi?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ratione quasi voluptatum, doloremque amet natus excepturi ut optio rem cupiditate.
+        </p>
+
+      
+
+        <p class="add">Be our guest 
+            <a href="#modal">Subscribe here</a>
+        </p>
+
+        <div id="modal">
+            <h1>Apply for this product</h1>
+            <h2>In order to apply fill in the blank</h2>
+            <form>
+                <label for="fname">First name</label>
+                    <input id="fname" type="text" placeholder="full Name e.g"><br>
+
+                <label for="phone">Phone nr.</label>
+                    
+                <select name="prefix" id="phone">
+                        <option value="Md">+373</option>
+                        <option value="Ro">+40</option>
+                        <option value="Ru">+123</option>
+                        <option value="UK">+343</option>
+                    </select>
+                <input class="phone_form" id="phone" placeholder="phone:+12345678" type="text">
+                    <br>
+                
+                
+                <label for="email">Email</label>
+                
+                    <input id="email" placeholder="email:abc@abc.com" type="text"><br>
+
+                <button>APPLY</button>
+                <div class="close">
+                    <a href="#">X</a>
+                </div>
+            
+            </form>
+        </div>
+        
+        <div class="overlay"></div>
+
+
+
+    </main>
+    
+</body>
+</html>
